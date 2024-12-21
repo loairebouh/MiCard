@@ -11,14 +11,32 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Container(
-            height: 100,
-            width: 100,
-            margin: EdgeInsets.only(left: 30),
-            color: Colors.white,
-            child: Text("Hello"),
-          ),
-        ),
+            child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Container(
+              height: 100,
+              width: 100,
+              margin: EdgeInsets.only(left: 30),
+              color: Colors.white,
+              child: Text("Container 1"),
+            ),
+            Container(
+              height: 100,
+              width: 100,
+              margin: EdgeInsets.only(left: 30),
+              color: Colors.blue,
+              child: Text("Container 2"),
+            ),
+            Container(
+              height: 100,
+              width: 100,
+              margin: EdgeInsets.only(left: 30),
+              color: Colors.orange,
+              child: Text("Hello"),
+            ),
+          ],
+        )),
       ),
     ); // Closing parenthesis and semicolon added.
   }
